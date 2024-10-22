@@ -1,4 +1,4 @@
-#hangmaan
+Hangman
 <!DOCTYPE html>
 <html lang="no">
 <head>
