@@ -1,44 +1,48 @@
-Hangman
 <!DOCTYPE html>
 <html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hangman samegilli</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hangman Samegilli</title>
+
+    <!-- CSS direkte inne i <head> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>spille hagmana samegilli!</h1>
+    <h1>Spille Hagmana Samegilli!</h1>
     <p id="demo">Da lea souhtats neahttasidu gos sahtat speallat hangmana!.</p>
-    <button onclick="changeText()">deadel mu!</button>
+    <button onclick="changeText()">Deadel mu!</button>
 
-    <script src="script.js"></script>
+    <!-- JavaScript direkte før </body> -->
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "Takk for at du klikket!";
+        }
+    </script>
 </body>
 </html>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-}
-
-h1 {
-    color: #333;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-function changeText() {
-    document.getElementById("demo").innerHTML = "Takk for at du klikket!";
-}
